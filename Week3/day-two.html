@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 - Day 2</title>
+  </head>
+  <body>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+      <!-- Full Name -->
+      <div>
+        <label for="fullname">Fullname:</label>
+        <input type="text" name="fullname" id="fullname" required />
+      </div>
+
+      <!-- Medical Info -->
+      <fieldset>
+        <legend>Medical Info</legend>
+
+        <!-- Blood type -->
+        <div>
+          <label for="bloodtype">Blood Type:</label>
+          <select name="bloodtype" id="bloodtype">
+            <!-- Put your selct options here -->
+            <option value="a positive">A+</option>
+            <option value="b positive">B+</option>
+            <option value="a negative">A-</option>
+            <option value="b negative">B-</option>
+            <option value="ab positive">AB+</option>
+            <option value="ab negative">AB-</option>
+          </select>
+        </div>
+        <!-- Height -->
+        <div>
+          <label for="height">Height (meters):</label>
+          <input type="number" name="height" id="height" step=".1" />
+        </div>
+      </fieldset>
+
+      <!-- Health Concerns -->
+      <fieldset>
+        <legend>Health Concerns</legend>
+        <div>
+          <input
+            type="checkbox"
+            name="healthconcerns"
+            value="Misssing Limb:"
+            id="missinglimb"
+          />
+          <label for="missinglimb">Missing Limb</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="healthconcerns"
+            value="Drained of All Blood:"
+            id="drainedofblood"
+          />
+          <label for="drainedofblood">Drained of All Blood</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="healthconcerns"
+            value="Lost in a Forest:"
+            id="lostinforest"
+          />
+          <label for="lostinforest">Lost in a Forest</label>
+        </div>
+      </fieldset>
+
+      <!-- Pain Level -->
+      <fieldset>
+        <legend>Describe Your Pain Level</legend>
+        <div>
+          <input type="radio" name="painlevel" id="painlevel-high" />
+          <label for="painlevel-high">High</label>
+        </div>
+        <div>
+          <input type="radio" name="painlevel" id="painlevel-med" />
+          <label for="painlevel-med">Medium</label>
+        </div>
+        <div>
+          <input type="radio" name="painlevel" id="painlevel-low" />
+          <label for="painlevel-low">Low</label>
+        </div>
+      </fieldset>
+
+      <!-- Submit -->
+      <div>
+        <input type="submit" value="Get Results" />
+        <input type="reset" value="Cancel" />
+      </div>
+    </form>
+  </body>
+</html>
