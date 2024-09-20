@@ -8,18 +8,89 @@
   </head>
   <body>
     <header>
-      <body>
-        <a href="index.html">Index</a>
-        <a href=""></a>
-        <a href=""></a>
-      </body>
+      <a href="index.html">Index</a>
+      <a href="tournament.html">Tournament</a>
+      <a href="contact.html">Contact Us</a>
     </header>
+    <h1>Contact Us</h1>
 
     <form action="formPost.html" method="get">
       <div class="formfield">
         <label for="phone">Cell:</label>
         <input type="tel" name="phone" id="phone" />
       </div>
+
+      <div class="formfield">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <div class="formfield">
+        <label for="age">Age:</label>
+        <input type="range" id="age" name="age" min="20" max="100" value="60" />
+      </div>
+
+      <div class="formfield">
+        <label for="grade">Grade:</label>
+        <div>
+          <input type="radio" name="grade" id="freshman" />
+          <option for="freshman">Freshman</option>
+        </div>
+        <div>
+          <input type="radio" name="grade" id="sophmore" />
+          <option for="sophmore">Sophmore</option>
+        </div>
+        <div>
+          <input type="radio" name="grade" id="junior" />
+          <option for="junior">Junior</option>
+        </div>
+        <div>
+          <input type="radio" name="grade" id="senior" />
+          <option for="senior">Senior</option>
+        </div>
+      </div>
+
+      <div class="formfield">
+        <label for="tournamentwins">Number of Tournament Wins:</label>
+        <input
+          type="number"
+          id="tournamentwins"
+          name="tournamentwins"
+          step="1"
+        />
+      </div>
+
+      <div class="formfield">
+        <label for="club">Clubs:</label>
+        <div>
+          <input
+            type="checkbox"
+            name="healthconcerns"
+            value="Misssing Limb:"
+            id="missinglimb"
+          />
+          <label for="missinglimb">Chess</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="healthconcerns"
+            value="Drained of All Blood:"
+            id="drainedofblood"
+          />
+          <label for="drainedofblood">Tennis</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="healthconcerns"
+            value="Lost in a Forest:"
+            id="lostinforest"
+          />
+          <label for="lostinforest">Speech</label>
+        </div>
+      </div>
+
       <div class="formfield">
         <label for="reason">Reason:</label>
         <select name="reason" id="reason">
@@ -29,8 +100,21 @@
       </div>
 
       <div class="formfield">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+      </div>
+
+      <div class="formfield">
         <input type="submit" value="Send" />
       </div>
     </form>
+    <footer>
+      <p>
+        Copyright Purple Macaroni &copy;
+        <a href="contact.html">Contact Us</a>
+        <a href="#top">Go to Top</a>
+        <a href="masinfo.html">MAS Information</a>
+      </p>
+    </footer>
   </body>
 </html>

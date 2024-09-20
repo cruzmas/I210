@@ -1,3 +1,10 @@
+header {
+    height: 30px;
+    background-color: lightgray;
+    text-decoration: none;
+    color: white;
+}
+
 form {
     width: 400px;
     background-color: lightgray;
@@ -17,10 +24,12 @@ form {
 
 .formfield input {
     height: 30px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
-.formfield input [type=submit] {
-    border-radius: 30px;
-    font-size: 20px;
+footer {
+    height: 30px;
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
 }
