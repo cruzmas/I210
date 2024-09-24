@@ -1,0 +1,64 @@
+nav {
+    display: flex;
+    flex-direction: row;
+/* flex-direction can change the nav from row to column */
+justify-content: space-evenly;
+/* justify-content controls the space inbetween elements */
+align-items: center;
+/* align-items moves elements vertically */
+background-color: lightgray;
+height: 50px;
+}
+
+nav a {
+    color: white;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+/* flex-direction can change the nav from row to column */
+justify-content: space-evenly;
+/* justify-content controls the space inbetween elements */
+align-items: center;
+/* align-items moves elements vertically */
+background-color: lightgray;
+height: 100px;
+flex-wrap: wrap;
+/* flex-wrap adjusts the content to fit in the element */
+}
+
+footer a {
+    color: white;
+}
