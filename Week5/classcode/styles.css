@@ -6,7 +6,7 @@ justify-content: space-evenly;
 /* justify-content controls the space inbetween elements */
 align-items: center;
 /* align-items moves elements vertically */
-background-color: lightgray;
+background-color: gray;
 height: 50px;
 }
 
@@ -15,10 +15,31 @@ nav a {
 }
 
 .box {
-    height: 100px;
-    width: 100px;
+    min-height: 50px;
+    height: 100%;
+    width: 100%;
     background-color: lightgray;
     border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    /* define the number of and width of columns */
+    /* set width based on web measurements using fractions (fr) */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-row-gap: 20px; */
+    grid-gap: 20px 5px;
+    grid-template-rows: 50px 200px 100px 200px;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.row-4 {
+    grid-row: span 4;
 }
 
 .red {
@@ -53,7 +74,7 @@ justify-content: space-evenly;
 /* justify-content controls the space inbetween elements */
 align-items: center;
 /* align-items moves elements vertically */
-background-color: lightgray;
+background-color: gray;
 height: 100px;
 flex-wrap: wrap;
 /* flex-wrap adjusts the content to fit in the element */
